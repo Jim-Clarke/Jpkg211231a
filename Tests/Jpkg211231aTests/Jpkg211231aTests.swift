@@ -8,4 +8,11 @@ final class Jpkg211231aTests: XCTestCase {
         // results.
         XCTAssertEqual(Jpkg211231a().text, "Hello, World!")
     }
+
+    func testDoubler() {
+        let d = Doubler()
+        let x = 5
+        XCTAssertEqual(d.double(x), x*2, "twice \(x) is \(x*2)")
+    }
+
 }
